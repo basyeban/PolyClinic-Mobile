@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "318273076725",
+    "firebase_url": "https://ukkpakbinar-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ukkpakbinar",
+    "storage_bucket": "ukkpakbinar.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318273076725:android:95caeaa734f87b970d34bc",
+        "android_client_info": {
+          "package_name": "com.daniel.ujianakhir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFI-EmXwWVDbAfVmMwA-_Mn5o_PZG31bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318273076725:android:e2873229a0c78a1a0d34bc",
+        "android_client_info": {
+          "package_name": "com.daniel.ukk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFI-EmXwWVDbAfVmMwA-_Mn5o_PZG31bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318273076725:android:aa69e73fa11917510d34bc",
+        "android_client_info": {
+          "package_name": "com.daniel.ukk_pakbinar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFI-EmXwWVDbAfVmMwA-_Mn5o_PZG31bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ukk</string>
+    <array name="pilihpoli">
+        <item>Poli Umum</item>
+        <item>Poli Anak</item>
+    </array>
+    <array name="jeniskelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </array>
+</resources>

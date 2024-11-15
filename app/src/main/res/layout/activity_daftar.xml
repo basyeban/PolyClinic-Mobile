@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <!-- Main container layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- FrameLayout to stack ImageView with LinearLayout containing ImageButton and TextView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <!-- Background Image -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/padtop"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Back Button" />
+
+                <!-- Title TextView -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Pendaftaran Pasien"
+                    android:textColor="@color/Gray"
+                    android:layout_marginTop="50dp"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"/>
+        </FrameLayout>
+
+        <!-- Name input field -->
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Nama"
+            android:inputType="text"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="16sp"/>
+
+        <!-- Age input field -->
+        <EditText
+            android:id="@+id/umur"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Umur"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:maxLength="2"/>
+
+        <!-- Gender spinner (make sure to have an appropriate array in strings.xml) -->
+        <Spinner
+            android:id="@+id/spinnerjeniskelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:entries="@array/jeniskelamin" />
+
+        <!-- Address input field -->
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Alamat Lengkap"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="text"
+            android:textSize="16sp"/>
+
+        <!-- Phone number input field -->
+        <EditText
+            android:id="@+id/no_hp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Nomor HP"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:maxLength="12"/>
+
+        <!-- Poli selection spinner (make sure to have an appropriate array in strings.xml) -->
+        <Spinner
+            android:id="@+id/spinnerPilihPoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:entries="@array/pilihpoli"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+
+        <!-- Register button -->
+        <Button
+            android:id="@+id/simpan"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/Blue"
+            android:fontFamily="@font/poppins"
+            android:text="Daftar"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
