@@ -9,10 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Blue">#575CE5</color>
     <color name="Gray">#F8F8FC</color>
-    <color name="Cyan">#57E5CB</color>
+    <color name="Yellow">#FF9800</color>
     <color name="Green">#57E56E</color>
     <color name="darkblue">#59ACCF</color>
     <color name="btn_details">#57E5CB</color>
+    <color name="background">#DBE4EE</color>
     <color name="hijau">#57E56E</color>
     <color name="red">#E55757</color>
 </resources>

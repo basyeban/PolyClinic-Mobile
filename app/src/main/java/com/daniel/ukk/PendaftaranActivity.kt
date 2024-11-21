@@ -88,7 +88,7 @@ class PendaftaranActivity : AppCompatActivity() {
             }
 
             // Create User object
-            val user = User(namaText, umurText, jeniskelaminText, alamatText, no_hpText, pilihanPoliText)
+            val user = ModelDaftar(namaText, umurText, jeniskelaminText, alamatText, no_hpText, pilihanPoliText)
 
             // Save data to Firebase
             myRef.push().setValue(user)
@@ -108,13 +108,5 @@ class PendaftaranActivity : AppCompatActivity() {
         }
     }
 
-    // Data class for representing user data
-    data class User(
-        val nama: String,
-        val umur: String,
-        val jk: String,
-        val alamat: String,
-        val noHp: String,
-        val pilihanPoli: String
-    )
+
 }

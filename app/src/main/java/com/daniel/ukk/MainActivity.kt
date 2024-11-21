@@ -73,6 +73,7 @@ MainActivity : AppCompatActivity() {
             val btnkonsul = findViewById<LinearLayout>(R.id.konsul)
             val btnjadwal = findViewById<LinearLayout>(R.id.poli)
             val btnhomevisit = findViewById<LinearLayout>(R.id.homevisit)
+            val btninformasi = findViewById<LinearLayout>(R.id.informasi)
             val btnakun = findViewById<ImageButton>(R.id.akun)
 
             // Set click listeners for each button
@@ -85,6 +86,10 @@ MainActivity : AppCompatActivity() {
                 intent.data = Uri.parse("https://wa.me/6283154764741")
                 startActivity(intent)
             }
+            btninformasi.setOnClickListener {
+                startActivity(Intent(this, DaftarBaruActivity::class.java))
+            }
+
             btnjadwal.setOnClickListener {
                 startActivity(Intent(this, JadwalActivity::class.java))
             }

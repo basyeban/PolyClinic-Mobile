@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama" />
+
+    <EditText
+        android:id="@+id/editumur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Umur" />
+
+    <Spinner
+        android:id="@+id/editjk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/jeniskelamin" />
+
+    <EditText
+        android:id="@+id/editalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Lengkap" />
+
+    <EditText
+        android:id="@+id/editno_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Telepon" />
+
+    <Spinner
+        android:id="@+id/editpilihanpoli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/pilihpoli" />
+</LinearLayout>
