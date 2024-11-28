@@ -14,7 +14,12 @@ class HomevisitActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homevisit)
 
-
+        val hubhomevisit: LinearLayout = findViewById(R.id.telpon)
+        hubhomevisit.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://wa.me/6281317170505")
+            startActivity(intent)
+        }
 
 
         val hubigd: LinearLayout = findViewById(R.id.telpon2)
